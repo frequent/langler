@@ -1,0 +1,48 @@
+% NS_B
+<s>   	 sil
+
+% NS_E
+</s>   	 sil
+
+% COMMAND, NAME, SUBJECT, ACTIVITY, DIGIT, HELPER
+LEFT       l eh f t
+RIGHT      r ay t
+UP         ah p
+DOWN       d aw n
+SAVE       s ey v
+CLOSE      k l ow s
+OPEN       ow p ah n
+REMOVE     r iy m uw v
+SEARCH     s er ch
+BULK       b ah l k
+SYNC       s ih ng k
+PICK       p ih k
+TAB        t ae b
+NEXT       n eh k s t
+PREVIOUS   p r iy v iy ah s
+
+% NAME
+LUCY       l uw s iy
+
+% SUBJECT
+WEAPON     w eh p ah n
+SYSTEMS    s ih s t ah m z
+TARGET     t aa r g ah t
+
+%DISTANCE
+METERS     m iy t er z
+
+% ACTIVITY
+ACTIVATE   ae k t ah v ey t
+ACQUIRE    ah k w ay er
+DEPLOY     d ih p l oy
+FIRE       f ay er
+
+% DIGIT
+ONE        w ah n
+TWO        t uw
+THREE      th r iy
+
+% HELPER
+IN         ih n
+ON         aa n

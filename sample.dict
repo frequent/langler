@@ -1,0 +1,31 @@
+0	[<s>]	sil
+1	[</s>]	sil
+2	[LEFT]	l eh f t
+2	[RIGHT]	r ay t
+2	[UP]	ah p
+2	[DOWN]	d aw n
+2	[SAVE]	s ey v
+2	[CLOSE]	k l ow s
+2	[OPEN]	ow p ah n
+2	[REMOVE]	r iy m uw v
+2	[SEARCH]	s er ch
+2	[BULK]	b ah l k
+2	[SYNC]	s ih ng k
+2	[PICK]	p ih k
+2	[TAB]	t ae b
+2	[NEXT]	n eh k s t
+2	[PREVIOUS]	p r iy v iy ah s
+3	[LUCY]	l uw s iy
+4	[WEAPON]	w eh p ah n
+4	[SYSTEMS]	s ih s t ah m z
+4	[TARGET]	t aa r g ah t
+5	[METERS]	m iy t er z
+6	[ACTIVATE]	ae k t ah v ey t
+6	[ACQUIRE]	ah k w ay er
+6	[DEPLOY]	d ih p l oy
+6	[FIRE]	f ay er
+7	[ONE]	w ah n
+7	[TWO]	t uw
+7	[THREE]	th r iy
+8	[IN]	ih n
+8	[ON]	aa n

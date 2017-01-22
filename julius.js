@@ -69,8 +69,7 @@
         return MEDIA_DEVICES.getUserMedia({audio: true});
       })
       .push(function (my_stream) {
-        var audio = julius_instance.audio,
-          recognizer = julius_instance.recognizer;
+        var audio = julius_instance.audio;
 
         // set source to input stream and connect
         audio.source = audio.context.createMediaStreamSource(my_stream);

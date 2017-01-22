@@ -247,3 +247,4 @@
   worker_instance.Resampler = Resampler;
 
 }(self));
+

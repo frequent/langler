@@ -4,40 +4,6 @@
 
   var AUDIO_CONTEXT = window.AudioContext || window.webkitAudioContext;
   var MEDIA_DEVICES = navigator.mediaDevices;
-
-  // Custom loopEventListener
-  function juliusLoopEventListener(my_target, my_type, my_callback) {
-    var handle_event_callback,
-      callback_promise;
-
-    function cancelResolver() {
-      if ((callback_promise !== undefined) &&
-        (typeof callback_promise.cancel === "function")) {
-        callback_promise.cancel();
-      }
-    }
-    function canceller() {
-      cancelResolver();
-    }
-    function itsANonResolvableTrap(resolve, reject) {
-      handle_event_callback = function (evt) {
-        cancelResolver();
-        callback_promise = new RSVP.Queue()
-          .push(function () {
-            return my_callback(evt);
-          })
-          .push(undefined, function (error) {
-            if (!(error instanceof RSVP.CancellationError)) {
-              canceller();
-              reject(error);
-            }
-          });
-      };
-      // eg julius.onfirstpass = function () {...
-      my_target["on" + my_type] = my_callback;
-    }
-    return new RSVP.Promise(itsANonResolvableTrap, canceller);
-  }
   
   function postBuffer() {
     var julius_instance = this;
@@ -100,7 +66,7 @@
 
     return new RSVP.Queue()
       .push(function () {
-        return navigator.mediaDevices.getUserMedia({audio: true});
+        return MEDIA_DEVICES.getUserMedia({audio: true});
       })
       .push(function (my_stream) {
         var audio = julius_instance.audio,
@@ -191,3 +157,4 @@
   window.Julius = Julius;
 
 }(window, window.navigator, RSVP));
+
